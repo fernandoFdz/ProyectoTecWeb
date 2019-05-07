@@ -4,6 +4,8 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>reto 4</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">        
+
 <style type="text/css">
 
 body{
@@ -19,28 +21,26 @@ body{
     background-size: 100% 280px;                
 }
 
-
-
 .botonesSuperioresA{
     position: absolute;
-    margin: 5px;
-    width: 55%;
-    height: 80px;
-    border: 1px solid red;
-    left: 30px;
-    
+    margin: 0px;
+    width: 100%;
+    background-color: rgb(31, 31, 196);
+    opacity: .5;
+    height: 75px;
+    border: 1px solid red;   
 }
 
 .botonesSuperioresB{
     position: absolute;
     margin: 5px;
     width: 35%;
-    height: 80px;
+    height: 75px;
     border: 1px solid red;
-    left: 30px;
+    right: 30px;
+    float: right;
     
 }
-
 
 a{
     text-decoration: none;
@@ -50,7 +50,10 @@ h3{
     color: white;
     font-family: MifuentePersonal;
     text-shadow: -2px -2px 1px #000;   
-    border: 1px solid white; 
+    margin: 20px;
+    padding: 0px; 
+    float: left;
+
 }
 
 @font-face{
@@ -65,16 +68,16 @@ h3{
 <body>
     <div class="barraSuperior">
         <div class="botonesSuperioresA">
-            <a href="#"> <img src="logito.png"  width="85px"> </a>
+            <a href="#"> <img src="logito.png" style="float:left;" width="85px"> </a>
             <a href="#"> <h3>lista de deseados </h2></a>
             <a href="#"> <h3>ofertas </h2> </a>
             <a href="#"> <h3>catalogo </h2></a>
+            <a href="#"> <a  href="#" class="link"><i class="fas fa-envelope-square" style="float: right"></i>  </a>
+            <a href="#"> <img src="picPerfil.png" style="float: right;margin: 1px; padding: 4px;" width="70px"> </a>
         </div>
-
+    
     </div>
-    <div class="botonesSuperioresB">
-
-    </div>
+    
    
 </body>
 
