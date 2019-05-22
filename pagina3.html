@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>cuenta</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">        
+<link rel='stylesheet' href='tema.css' type='text/css' media=screen>
+
+
+    <script type="text/javascript">
+        function abreBuscar()
+        {
+            var cambio = document.getElementById("idSearch");
+            if(cambio.style.visibility = 'hidden'){
+                cambio.style.visibility = 'visible';      
+            }
+        }
+        function cierraBuscar()
+        {
+            var cambio = document.getElementById("idSearch");
+            if(cambio.style.visibility = 'visible'){
+                cambio.style.visibility = 'hidden';      
+            }
+        }
+
+        function lanzaDatos(){
+            var abre = document.getElementById("idDatos");
+            if(abre.style.display == 'inline'){
+                abre.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+
+    <body>
+        <div class="barraSuperior">
+            <div class="botonesSuperioresA">
+                <a href="#"> <img src="logito.png" style="float:left;" width="85px"> </a>
+                <a href="#"> <h3>lista de deseados </h3></a>
+                <a href="#"> <h3>ofertas </h3> </a>
+                <a href="#"> <h3>catalogo </h3></a>
+                <a href="#"> <img src="picPerfil.png" style="float: right;margin: 1px; padding: 4px;" width="70px"> </a>
+                <a href="#"> <h3 style="float:right;">Iniciar Sesión</h3></a>
+                <a href="#"> <i class="fas fa-search" style="color:white; float:right;padding: 25px;" onclick="abreBuscar()"></i> </a>
+                
+            </div>
+            <div class="buscador" id="idSearch">
+                            <input type="text" class="textbox" size="100" placeholder="buscar">
+                            <button name="button" class="btnBuscar" >Buscar</button>
+                            <a href="#"><i class="fas fa-times" onclick="cierraBuscar()"></i></a>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="submenu">
+
+                <h6><a href="#">Configuración de cuenta</a></h6>
+                <h6><a href="#">historial de compras</a></h6>
+                <h6><a href="#">Cerrar sesión</a></h6>
+            </div>
+            <div class="modificar">
+                    <a href="#" onclick="lanzaDatos()"><h6>Perfil</h6></a> 
+                    <div class="contenedorPerfil" id="idDatos">
+                        <h6>Nombre</h6>
+                        <input type="text" class="textbox" size="60" placeholder="">
+                        <h6>Apellido</h6>
+                        <input type="text" class="textbox" size="60" placeholder="">
+                        <h6>Correo</h6>
+                        <input type="text" class="textbox" size="60" placeholder="">
+                    </div>
+                    <h6>Contraseña</h6>
+                    <br>
+                    <h6>Contraseña antigüa</h6>
+                    <input type="password" class="textbox" size="60" placeholder="">
+                    <h6>Contraseña nueva</h6>
+                    <input type="password" class="textbox" size="60" placeholder="">
+                    <br><br>
+                    <button name="button" class="btnBuscar" style="margin-top:100px;" onclick="guardarCambios" >Guardar Cambios</button>
+            </div> 
+        </div>
+
+        <div class="Creditos">
+            <a href="#"> <img src="logito.png" style="float:left; padding-left: 50px; padding-top: 20px;" width="85px"> </a>
+        </div>
+        
+    </body>
+</html> 

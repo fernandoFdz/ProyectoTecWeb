@@ -1,0 +1,443 @@
+.barraSuperior
+{
+    width: 100%;
+    height: 280px;
+    border: 1px solid blue;
+    background-image: url("fondo.jpg");         
+    background-size: 100% 280px;                
+}
+
+.Creditos{
+    width: 100%;
+    height: 300px;
+    border: 1px solid blue;
+    background-color: #2E3133;
+    background-image: url("monito.png");
+    background-size: 180px 280px;
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 10px;
+    opacity: .8;
+    
+}
+
+.contenedor{
+    width: 100%;
+    height: 1800px;
+    border: 1px solid red;
+    background-image: url("fondo2.jpg");
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+.contenedorA{
+    width: 20%;
+    height: 600px;
+    border: 1px solid black;
+    float: left;
+}
+
+.botonesSuperioresA
+{
+    margin: 0px;
+    width: 100%;
+    background-color: rgb(31, 31, 196);
+    opacity: .5;
+    height: 75px;
+    border: 1px solid red;   
+}
+
+.buscador{
+    visibility: hidden;
+    margin-left: 200px;
+    width: 65%;
+    height: 60px;
+    border: 1px solid blue;
+    position: fixed;
+    background-color: white;
+    border-radius: 0px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+}
+
+.textbox
+  {
+    margin-right:5px;
+    padding: 0px;
+    border: 1px solid #DBE1EB;
+    font-size: 15px;
+    font-family: MifuentePersonal;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #000000;
+  }
+
+  .btnBuscar{
+    margin-right: 15px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    transition: all .1s linear .1s;
+  }
+
+  .btnBuscar:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+  
+  .textbox:focus
+  {
+  color: #2E3133;
+  border-color: #FBFFAD;
+  }
+
+a{ text-decoration: none; }
+
+h3{
+    color: white;
+    font-family: MifuentePersonal;
+    text-shadow: -2px -2px 1px #000;   
+    margin: 20px;
+    padding: 0px; 
+    float: left;
+}
+
+    h4{
+        color:black;
+        text-shadow: -2px -2px 1px #fff; 
+        float: right;
+    }
+
+    #menu{
+        width:200px;
+        height: 500px;
+        position:static;
+        background: transparent;
+        float: left;
+        margin-top: 20px;
+    }
+
+    #menu h6{
+        color: #000;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        margin-left: 20px;
+        margin-bottom: 20px; 
+    }
+
+    #menu ul{
+        padding-top: 25px;
+        margin-left: -30px;
+    }
+
+    #menu ul a{
+        text-decoration: none;
+        color: #f2f2f2;
+        font:16px verdana;
+        display: block;
+        background: #086A87;
+        margin-bottom: 10px;
+        padding: 10px 20px 10px 40px;
+        border-radius: 15px;
+        transition: background .6s, margin-left .6s, margin-left .6s;
+        -webkit-transition: background .6s, margin-left .6s, margin-left .6s;
+        -moz-transition: background .6s, margin-left .6s, margin-left .6s;
+        -o-transition: background .6s, margin-left .6s, margin-left .6s;
+    }
+
+    #menu ul a:hover{
+        margin-right: -20px;
+        margin-left: 20px;
+        background: #00BFFF;
+    }
+
+    @font-face{
+        font-family: MiFuentePersonal;
+        src:url("fuentes/ComicBook.otf") format("opentype");
+    }
+
+    
+.formulario{
+    width: 85%;
+    height: 700px;
+    border: 1px solid red;
+    margin: 0px auto;
+}
+
+.formularioSA{
+    float: left;
+    width: 44.5%;
+    height: 698px;
+    border: 1px solid black;
+    margin: 0px auto;
+}
+.formularioSB{
+    margin-top: 540px;
+    float: right;  
+    width: 52%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.formulario h5{
+    font:36px verdana;
+    margin-top:  10px;
+    margin-left: 20px;
+}
+
+.formulario h6{
+    font:20px verdana;
+    color: #000;
+    margin-top:  10px;
+    margin-left: 20px;
+}
+
+.registro{
+    margin-right:5px;
+    font-size: 15px;
+    font-family: MifuentePersonal;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    margin-left: 20px;
+    margin-top: -20px;
+    padding-right: 7px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    background: #FFFFFF;
+    background: linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #000000;
+}
+
+.submenu{
+    width: 20%;
+    height: 200px;
+    border: 1px solid blue;
+    margin-left: 150px;
+    margin-top: 30px;
+    border-top: 5px solid blue;
+    text-align: center;
+    float: left;
+}
+
+.submenu h6{
+    color:blue;
+    font:20px verdana;
+    margin: 0px;
+    margin-top:30px;
+    text-decoration: none;
+}
+
+.modificar{
+    width: 40%;
+    height: 700px;
+    border: 1px solid black;
+    float: right;
+    margin-top: 40px;
+    border-top: 5px solid blue;
+    margin-right: 200px;
+    
+}
+
+.modificar h6{
+
+    color:black;
+    font:22px verdana;
+    margin: 0px;
+    margin-top:15px;
+}
+
+.categoria1{
+    overflow-x: scroll;
+    margin-top: 50px;
+    width: 80%;
+    height: 300px;
+    border: 1px solid green;
+    float: right;
+    border-top: 2px solid blue;    
+}
+
+.funko{
+    height: 400px;
+    width: 252px;
+    border: 1px solid red;
+    float: left;
+    text-align: center;
+    margin: 0px auto;
+    margin-left: 25px;
+    margin-top: 100px;
+    border-radius: 35px 35px 35px 35px;
+    -moz-border-radius: 35px 0px 35px 35px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.fotoFunko{
+    background: url("funko.jpg");
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    float: left;
+    border: 1px solid blue;
+    border-radius: 35px 35px 0px 0px;
+}
+
+.nombreFunko{
+    
+    width: 250px;
+    height: 70px;
+    border: 1px solid black; 
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nombreFunko h1{
+    color: black;
+    text-align: center;
+    font-size: 14px;
+}
+
+.precioFunko{
+    margin: 0px;
+    width: 250px;
+    height: 60px;
+    border: 1px solid blue;
+    border-radius: 35px 35px 0px 0px;
+
+}
+
+.funko h2{
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   margin:0px auto;
+   text-align: center;
+   color:black;
+}
+
+.contenedorPerfil{
+
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid blue;
+}
+
+.contenedorFunkos{
+    width: 84%;
+    height: 95%;
+    border:1px solid blue;
+    float: right;
+    margin-left: 5px;
+}
+
+.registroOP{
+    width: 180px;
+    height: 180px;
+    border: 1px solid red;
+    float: right;
+    background-color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-radius: 0px 0px 35px 35px;
+    -moz-border-radius: 35px 0px 35px 0px;
+}
+
+.registroOP a{
+    text-decoration: none;
+    color: #000;
+}
+
+.costos{
+    width: 40%;
+    height: 350px;
+    border: 1px solid red;
+    margin-left: 650px;
+    z-index: 1;
+    margin-top: 120px;
+    
+}
+
+.costos h6{
+    color:black;
+    font-size: 20px;
+}
+
+.slider{
+    width:100%;
+    height: 280px;
+    margin: auto;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.slider ul{
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+
+.slider li{
+    width: 100%;
+    margin: 0px;
+    list-style:none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300;}
+    100%{margin-left: -300%;}
+}
+
+.example{
+    height: 70%;
+    width: 85%;
+    float: right;
+    border: 1px solid yellow;
+}
