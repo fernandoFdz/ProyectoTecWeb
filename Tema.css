@@ -69,6 +69,22 @@
     background-image: url("fondoBlanco.jpg");
 }
 
+.formulario a{
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.productosB{
+    float: left;
+    margin: auto 0px;
+    width: 300px;
+    border: 1px solid red;
+    margin-left: 20px;
+    text-align: center
+}
+
 body
 {
     margin: 0px;
@@ -400,6 +416,7 @@ a{ text-decoration: none; }
 
 .registroOP{
     position: absolute;
+    visibility: hidden;
     right: 93px;
     top: 0px;
     width: 185px;
@@ -547,4 +564,11 @@ a{ text-decoration: none; }
     height: 450px;
     margin:0px;
     width: 100%
+}
+
+.formularioIzq{
+    height: 100%;
+    width: 400px;
+    border: 1px solid blue;
+    float: left;
 }
