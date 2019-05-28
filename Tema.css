@@ -105,13 +105,14 @@ ul {
 
 
 .buscador{
-    float: left;
+    text-align: center;
     visibility: hidden;
     position: absolute;
     left: 0px;
     top: 0px;
+    margin: 0px auto;
     margin-left: 200px;
-    width: 65%;
+    width: 60%;
     height: 60px;
     border: 1px solid blue;
     background-color: white;
@@ -126,9 +127,8 @@ ul {
     padding: 0px;
     border: 1px solid #DBE1EB;
     font-size: 15px;
-    font-family: MifuentePersonal;
     font-family: Arial, Verdana;
-    padding-left: 7px;
+    padding-left: 17px;
     padding-right: 7px;
     padding-top: 10px;
     padding-bottom: 8px;
@@ -518,7 +518,7 @@ a{ text-decoration: none; }
 
 
 .bordeImagenes{
-    margin-left: 150px;
+    margin-left: 10px;
     margin-top: 50px;
     border-radius: 35px 35px 35px 35px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -568,7 +568,7 @@ a{ text-decoration: none; }
 
 .formularioIzq{
     height: 100%;
-    width: 400px;
+    width: 500px;
     border: 1px solid blue;
     float: left;
 }

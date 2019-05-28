@@ -47,8 +47,8 @@
 
 <body>
     <div class="botonesSuperioresA">
-        <a href="#"> <img src="logito.png" style="float:left;margin-left: 40px; margin-top: 10px;" width="70px" > </a>             
-        <a href="#"> <h3>ofertas </h3> </a>
+        <a href="pagina principal.html"> <img src="logito.png" style="float:left;margin-left: 40px; margin-top: 10px;" width="70px" > </a>            
+        <a href="Ofertas.html"> <h3>ofertas </h3> </a>
         <a href="catalogo.html"> <h3>catalogo </h3></a>
         <a href="listaDeseados.html"> <h3>lista de deseados </h3></a>
         <a href="Administrador.html"> <h3>Administrador </h3></a> 
@@ -84,17 +84,36 @@
         </div>
     </div>        
 
-    <div class="contenedor">
-        <section id="menu">
-            <ul>
-                <a href="#"><li>Disney</li></a> 
-                <a href="#"><li>Marvel</li></a>
-                <a href="#"><li>DC</li></a>
-                <a href="#"><li>Rick & Morty</li></a>
-                <a href="#"><li>Overwatch</li></a>
-                <a href="#"><li>The Simpsons</li></a> 
-            </ul>
-        </section>
+    <div class="formulario">
+        <div class="formularioIzq">
+            <h5>MODIFICAR PRODUCTO</h5>
+            <h6>Buscar:</h6>
+            <input type="text" class="registro" size="30" placeholder="Buscar producto">
+            <button name="button" class="btnBuscar" style="margin-left: 10px;" onclick="guardarCambios" >buscar</button>
+
+            <h6>Nombre:</h6>
+            <input type="text" class="registro" size="30" placeholder="Nombre">
+            <h6>Tipo:</h6>
+            <input type="text" class="registro" size="30" placeholder="Tipo">
+            <h6>Marca:</h6>
+            <input type="text" class="registro" size="30" placeholder="Marca">
+            <h6>Descuento:</h6>
+            <input type="text" class="registro" size="40" placeholder="Descuento">
+            
+        </div>
+        <div class="formularioIzq">
+            <br><br><br><br><br><br><br>
+            <h6>Precio:</h6>
+            <input type="number" class="registro" size="40" placeholder="Precio">
+            <h6>Descripción:</h6>
+            <input type="text" class="registro" size="40" placeholder="Descripción">
+            <h6>Selecciona Foto: </h6><input type="file" style="margin-left:20px;margin-top:-15px;" name="archivo"> <br>
+            <input type="submit" value="Cargar archivo" style="margin-left:20px;">
+            <input type="reset" value="Cancelar"><br>
+            <button name="button" class="btnBuscar" style="margin-top:30px;margin-left: 10px;" onclick="guardarCambios" >modificar</button>
+
+        </div>
+        
 
        
     </div>

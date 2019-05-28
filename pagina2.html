@@ -1,3 +1,19 @@
+<?php
+    $Nombre = $_GET['[txtNombre]'];
+    $Correo = $_GET['[txtCorreo]'];
+    $contra = $_GET['[txtContrasena]'];
+    $Imagen = $_GET['[ImagenPerfil]'];
+    
+    extract($_GET);
+
+    $conn = mysqli_connect("localhost","root","","proyecto");
+
+    $qry = "INSERT INTO usuarios (Nombre, Foto,Correo,Contrasena,Tipo)
+        VALUES('$Nombre','$Imagen','$Correo''$Contra','Cliente');
+    $rs = mysqli_query($conn, $qry); 
+    header("Location:/http://localhost/tecweb/paginaPrincipal.php");
+>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -50,16 +66,17 @@
             <div class="formularioSA">
                 <h5>CREAR CUENTA</h5>
                 <h6>Nombre:</h6>
-                <input type="text" class="registro" size="40" placeholder="nombre">
-                <h6>Apellido:</h6>
-                <input type="text" class="registro" size="40" placeholder="Apellido">
+                <input type="text" class="registro" size="40" placeholder="nombre" id="txtNombre">
                 <h6>Correo:</h6>
-                <input type="text" class="registro" size="40" placeholder="Correo">
+                <input type="text" class="registro" size="40" placeholder="Correo" id="txtCorreo">
                 <h6>Contraseña:</h6>
-                <input type="password" class="registro" size="40" placeholder="Contraseña">
+                <input type="password" class="registro" size="40" placeholder="Contraseña" id="txtContrasena">
                 <h6>Confirmar Contraseña:</h6>
-                <input type="password" class="registro" size="40" placeholder="Contraseña">
-           
+                <input type="password" class="registro" size="40" placeholder="Contraseña" id="txtContrasena2">
+                <h6>Selecciona Foto: </h6><input type="file" style="margin-left:20px;margin-top:-15px;" name="archivo" id="ImagenPerfil"> <br>
+                <input type="submit" style="margin-left:20px;" value="Cargar archivo">
+                <input type="reset" value="Cancelar"><br>
+
             </div>
             <div class="formularioSB">
                     <button name="button" class="btnBuscar" >Crear</button>

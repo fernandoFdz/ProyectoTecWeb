@@ -1,3 +1,7 @@
+<?php
+   echo "<script>muestraAdmi();</script>"
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,6 +13,17 @@
 
 
 <script type="text/javascript">
+
+    function muestraAdmi()
+    {
+        var x = document.getElementById("idDeseos");
+        
+        if(x.style.visibility=="hidden")
+        {
+            x.style.visibility="visible";
+            
+        }
+    }
 
     function abreBuscar()
     {
@@ -26,22 +41,40 @@
         }
     }
 
+    function abreSesion()
+    {
+        var cambio = document.getElementById("idRegistro");
+        if(cambio.style.visibility = 'hidden'){
+            cambio.style.visibility = 'visible';      
+        }
+    }
+
+    function cierraSesion()
+    {
+        var cambio = document.getElementById("idRegistro");
+        if(cambio.style.visibility = 'visible'){
+            cambio.style.visibility = 'hidden';      
+        }
+    }
+
     </script>
 </head>
 
 <body>
-    <div class="botonesSuperioresA">
+    
+    <div class="botonesSuperioresA" >
         <a href="pagina principal.html"> <img src="logito.png" style="float:left;margin-left: 40px; margin-top: 10px;" width="70px" > </a>            
         <a href="Ofertas.html"> <h3>ofertas </h3> </a>
         <a href="catalogo.html"> <h3>catalogo </h3></a>
-        <a href="listaDeseados.html"> <h3>lista de deseados </h3></a>
+        <a href="listaDeseados.html"> <h3 style="visibility:hidden" id="idDeseos">lista de deseados </h3></a>
         <a href="Administrador.html"> <h3>Administrador </h3></a> 
-        <a href="#"> <img src="picPerfil.png" style="float: right;margin-right: 20px;margin-top:5px;" width="70px"> </a>
+        <a href="#"> <img src="picPerfil.png" style="float: right;margin-right: 20px;margin-top:5px;" onmouseover="muestraAdmi()" width="70px"> </a>
         <div class="jejeje">
-        <a href="#"> <h3 style="float:right;" onmouseover="abreSesion()"  >Iniciar Sesión</h3></a>
+        <a href="#"> <h3 style="float:right;" onmouseover="abreSesion()">Iniciar Sesión</h3></a>
         </div>
         <a href="#"> <i class="fas fa-search" style="color:white; float:right;padding: 25px;margin-top: 5px;" onclick="abreBuscar()"></i> </a>
     </div>
+    
 
     <div class="slider">
         <ul>
@@ -51,8 +84,8 @@
             <li><img src="fondo2.jpg" style="width: 100%;height: 320px;" alt=""></li>
         </ul>  
 
-        <div class="buscador" id="idSearch">
-            <input type="text" class="textbox" size="100" placeholder="buscar">
+        <div class="buscador" id="idSearch" >
+            <input type="text" class="textbox" size="95" placeholder="buscar">
             <button name="button" class="btnBuscar" >Buscar</button>
             <a href="#"><i class="fas fa-times" onclick="cierraBuscar()"></i></a>
         </div>       
@@ -87,7 +120,7 @@
                 <div class="precioFunko"> <h2> $299.00</h2> <br>
                 <a href="#"><i class="far fa-star" style="color:blue; margin-top:-40px;"></i></a>
                 <a href="#"><i class="fas fa-cart-plus" style="color:yellowgreen;margin-top:-30px;"></i>
-                </div></a>
+                </div></a>   
             </div>
         
             <div class="funko">
@@ -105,6 +138,9 @@
                 <a href="#"><i class="far fa-star" style="color:blue; margin-top:-40px;"></i></a>
                 <a href="#"><i class="fas fa-cart-plus" style="color:yellowgreen;margin-top:-30px;"></i></div></a>
             </div>
+            <a href="#"> <img src="descuentos.jpg" class="bordeImagenes" > </a>   
+
+            <a href="#"> <img src="envio.jpg" class="bordeImagenes" > </a>
             <div class="funko">
                 <a href="#"><div class="fotoFunko"></div></a>
                 <div class="nombreFunko"><h1>FUNKO POP! Peter Parker SPIDERMAN ANIMATED</h1></div>
@@ -112,7 +148,8 @@
                 <a href="#"><i class="far fa-star" style="color:blue; margin-top:-40px;"></i></a>
                 <a href="#"><i class="fas fa-cart-plus" style="color:yellowgreen;margin-top:-30px;"></i></div></a>
             </div>
-           
+
+            
             
             <div class="funko">
                 <a href="#"><div class="fotoFunko"></div></a>
@@ -131,54 +168,11 @@
                 <a href="#"><i class="fas fa-cart-plus" style="color:yellowgreen;margin-top:-30px;"></i></div></a>
             </div>
     
-            <div class="funko">
-                <a href="#"><div class="fotoFunko"></div></a>
-                <div class="nombreFunko"><h1>FUNKO POP! Peter Parker SPIDERMAN ANIMATED</h1></div>
-                <div class="precioFunko"> <h2> $299.00</h2> <br>
-                <a href="#"><i class="far fa-star" style="color:blue; margin-top:-40px;"></i></a>
-                <a href="#"><i class="fas fa-cart-plus" style="color:yellowgreen;margin-top:-30px;"></i></div></a>
-            </div>
-            <div class="funko">
-                <a href="#"><div class="fotoFunko"></div></a>
-                <div class="nombreFunko"><h1>FUNKO POP! Peter Parker SPIDERMAN ANIMATED</h1></div>
-                <div class="precioFunko"> <h2> $299.00</h2> <br>
-                <a href="#"><i class="far fa-star" style="color:blue; margin-top:-40px;"></i></a>
-                <a href="#"><i class="fas fa-cart-plus" style="color:yellowgreen;margin-top:-30px;"></i></div></a>
-            </div>
-
-            <div class="funko">
-                <a href="#"><div class="fotoFunko"></div></a>
-                <div class="nombreFunko"><h1>FUNKO POP! Peter Parker SPIDERMAN ANIMATED</h1></div>
-                <div class="precioFunko"> <h2> $299.00</h2> <br>
-                <a href="#"><i class="far fa-star" style="color:blue; margin-top:-40px;"></i></a>
-                <a href="#"><i class="fas fa-cart-plus" style="color:yellowgreen;margin-top:-30px;"></i>
-                </div></a>
-            </div>
             
-            <div class="funko">
-                <a href="#"><div class="fotoFunko"></div></a>
-                <div class="nombreFunko"><h1>FUNKO POP! Peter Parker SPIDERMAN ANIMATED</h1></div>
-                <div class="precioFunko"> <h2> $299.00</h2> <br>
-                <a href="#"><i class="far fa-star" style="color:blue; margin-top:-40px;"></i></a>
-                <a href="#"><i class="fas fa-cart-plus" style="color:yellowgreen;margin-top:-30px;"></i></div></a>
+            <img src="bannner.png" width="100%" style="margin-top: 562px;">
+
             </div>
-  
-            <div class="funko">
-                <a href="#"><div class="fotoFunko"></div></a>
-                <div class="nombreFunko"><h1>FUNKO POP! Peter Parker SPIDERMAN ANIMATED</h1></div>
-                <div class="precioFunko"> <h2> $299.00</h2> <br>
-                <a href="#"><i class="far fa-star" style="color:blue; margin-top:-40px;"></i></a>
-                <a href="#"><i class="fas fa-cart-plus" style="color:yellowgreen;margin-top:-30px;"></i></div></a>
-            </div>
-  
-            <div class="funko">
-                <a href="#"><div class="fotoFunko"></div></a>
-                <div class="nombreFunko"><h1>FUNKO POP! Peter Parker SPIDERMAN ANIMATED</h1></div>
-                <div class="precioFunko"> <h2> $299.00</h2> <br>
-                <a href="#"><i class="far fa-star" style="color:blue; margin-top:-40px;"></i></a>
-                <a href="#"><i class="fas fa-cart-plus" style="color:yellowgreen;margin-top:-30px;"></i></div></a>
-            </div>
-        </div>        
+           
     </div>
 
     <div class="Creditos">
